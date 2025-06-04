@@ -46,6 +46,7 @@
   }
   .card {
     min-width: 80vw;
+    height: fit-content;
   }
   .card .screenshot {
     width: 100%;
