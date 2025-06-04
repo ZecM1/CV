@@ -86,6 +86,7 @@
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.1) inset, -5px -5px 15px rgba(255, 255, 255, 0.1) inset;
+  overflow: scroll;
 }
 .card .screenshot {
   min-width: 0;
