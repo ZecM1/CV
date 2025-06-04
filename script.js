@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(
     (entries) => {
-      console.log('IntersectionObserver entries:', entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate');
