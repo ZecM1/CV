@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Matteo Zec" />
+    <meta name="keywords" content="portfolio, MZ, web developer" />
+    <meta name="author" content="Matteo Zec" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="icon" href="Assets/Icons/icon.ico" type="image/x-icon" />
+    <title>Matteo Zec</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header-logo">MZ</div>
+      <nav>
+        <ul class="header-nav">
+          <li class="nav-link active"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#experience">Experience</a></li>
+          <li class="header-resume"><a href="Assets/Matteo Zec - CV.pdf" target="_blank">Resume</a></li>
+        </ul>
+        <!-- Insert mobile navbar -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- About section -->
+      <section class="about-container mainsection" id="about">
+        <article class="about-content">
+          <h2 class="about-title">Matteo Zec</h2>
+          <p class="about-text">
+            A frontend developer with strong fundamentals, fresh perspective, and boundless potential who values
+            thoughtful implementation and lean, efficient code.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:zec.mat1@gmail.com">
+              <img src="Assets/Icons/Email.svg" alt="Email icon" class="icon square" />
+            </a>
+            <a href="https://github.com/ZecM1" target="_blank">
+              <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/matteo-zec-986018349/" target="_blank">
+              <img src="Assets/Icons/LinkedIn.svg" alt="LinkedIn logo" class="icon square" />
+            </a>
+          </div>
+        </article>
+        <div class="about-design-element"></div>
+        <section class="radio-container">
+          <input class="radio-future" id="future" type="radio" name="content-choice" value="first" checked />
+          <label class="radio-future" for="future">Future</label>
+          <input class="radio-past" id="past" type="radio" name="content-choice" value="second" />
+          <label class="radio-past" for="past">Past</label>
+
+          <div id="" class="text-future">
+            <ul>
+              <li>
+                I prioritize <b>thorough understanding</b> of projects and processes. While I may take some time to
+                learn new methods, once I understand and adapt to your workflow, I will apply that knowledge with great
+                efficiency and could potentially identify opportunities for improvement when and if needed. My careful
+                learning approach results with strong execution and innovative solutions.
+              </li>
+              <li>
+                I have chosen frontend development as the foundation of my specialization, combining my blend of
+                artistic sensibility and a strong comprehension of coding principles. That, however, is only the first
+                step. I intend to adapt to the demands of the role, refine my expertise and expand my skillset further.
+              </li>
+              <li>
+                <strong>
+                  My initial and main goal is to achieve independence in your workplace as fast as possible and turn
+                  into an invaluable asset of your team.</strong
+                >
+              </li>
+            </ul>
+            <small>PS. Text written by me, partly refined by ai and then re-refined by me. </small>
+          </div>
+          <div id="" class="text-past">
+            <input type="checkbox" id="past1" name="accordion" />
+            <label for="past1">Decided early that I want to become a programmer.</label>
+            <div class="past-content">
+              <p>
+                First experienced coding in elementary school with MSW Logo, winning first place in a regional
+                competition. <br />This experience helped me decide what I want to do in life.
+              </p>
+            </div>
+            <input type="checkbox" id="past2" name="accordion" />
+            <label for="past2"
+              >Wanted to start working as one as soon as possible, so I chose the education that led down that
+              path.</label
+            >
+            <div class="past-content">
+              <p>
+                Completed Electrical Engineering School, a vocational highschool that was the only one with a
+                programming course. There I learned basics of C++ and how to program a microcontroller.
+              </p>
+              <p>
+                <br />Advanced on to Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture in
+                Split (FESB), Programming department, where I learned to code in C and Visual Basic before things took a
+                grim turn.
+              </p>
+            </div>
+            <input type="checkbox" id="past3" name="accordion" />
+            <label for="past3">Life had other plans and I got VERY sick.</label>
+            <div class="past-content">
+              <p>
+                After falling severely ill, I had to pause my education. Following several challenging years of
+                recovery, I made the decision to focus solely on regaining my health.
+              </p>
+            </div>
+            <input type="checkbox" id="past4" name="accordion" />
+            <label for="past4"
+              >Picked up art as a hobby and then suddenly got better. Now I want to become a programmer again!</label
+            >
+            <div class="past-content">
+              <p>
+                During my illness, I discovered art, focusing on photo and video editing, compositing, visual effects
+                and 3D modeling.
+              </p>
+              <p>
+                In 2022, my condition reached a critical point requiring major surgery. <br />After successful recovery,
+                I enrolled in Algebra University's Frontend developer course. It was a good start and more importantly
+                pointed me in the right direction. <br />Upon completing it I pursued additional online courses to
+                further improve my knowledge and understanding of Javascript and React.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Projects Card Carousel -->
+      <section class="projects-container mainsection" id="projects">
+        <h2>Projects</h2>
+        <div class="wrapper fade-in">
+          <article class="card">
+            <a href="https://zecm1.github.io/TaskTango/#/home" target="_blank"
+              ><img class="screenshot" src="Assets/Task Tango.png" height="500" width="750" alt="Task Tango screenshot"
+            /></a>
+            <h2>Task Tango</h2>
+            <p>
+              Task management website with a column-based layout where users can create, move, and organize tasks
+              through drag-and-drop functionality. Features multiple worksheet support for different projects and local
+              save functionality. As with all my projects, performance and optimization were the main focus.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/React.svg" alt="React logo" />
+                <img class="icon" src="Assets/Icons/Vite.svg" alt="Vite logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/TaskTango" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/TaskTango/#/home" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://zecm1.github.io/JambRemake/" target="_blank">
+              <img class="screenshot" src="Assets/JambRemake.png" height="500" width="750" alt="Jamb Remake screenshot"
+            /></a>
+            <h2>Jamb Remake</h2>
+            <p>
+              Also known as 5Dice or Yahtzee, Jamb offers a unique blend of strategy and luck. The game is played with 5
+              dice, and the goal is to score the highest points possible by rolling combinations of numbers. This
+              version is a remake of a project I did when I first learned Javascript with the emphasis on functionality
+              and clean code.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/Javascript.svg" alt="Javascript logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/JambRemake" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/JambRemake/" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="https://zecm1.github.io/Jamb/" target="_blank">
+              <img class="screenshot" src="Assets/Jamb.png" height="500" width="750" alt="Jamb screenshot"
+            /></a>
+            <h2>Jamb</h2>
+            <p>
+              This version of Jamb is the original project I created when I first learned Javascript. I used SCSS and
+              included better animations than the remake but the code is not as clean and functionality may not work as
+              originally intended.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/Javascript.svg" alt="Javascript logo" />
+                <img class="icon" src="Assets/Icons/SCSS.svg" alt="SCSS logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/Jamb" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/Jamb/" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="https://zecm1.github.io/Robofriends/" target="_blank">
+              <img
+                class="screenshot"
+                src="Assets/RoboFriends.png"
+                height="500"
+                width="750"
+                alt="RoboFriends screenshot"
+            /></a>
+            <h2>Robo Friends</h2>
+            <p>
+              A React application that showcases a collection of robot friends. Includes a search filter that allows
+              users to search for robots by name, making it easier to find specific robots in the collection.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/React.svg" alt="React logo" />
+                <img class="icon" src="Assets/Icons/Vite.svg" alt="Vite logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/Robofriends" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/Robofriends/" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="https://zecm1.github.io/QuoteGenerator/" target="_blank">
+              <img class="screenshot" src="Assets/Quote.png" height="500" width="750" alt="Quote Generator screenshot"
+            /></a>
+            <h2>Quote Generator</h2>
+            <p>
+              A simple yet engaging tool that fetches and displays quotes from an API with a single button click. It
+              also includes features for sharing quotes on Twitter and is designed to be responsive for both tablets and
+              mobile phones.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/Javascript.svg" alt="Javascript logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/QuoteGenerator" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/QuoteGenerator/" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="https://zecm1.github.io/JokeTeller/" target="_blank">
+              <img class="screenshot" src="Assets/Joke.png" height="500" width="750" alt="Joke Teller screenshot"
+            /></a>
+            <h2>Joke Teller</h2>
+            <p>
+              An interactive web application designed to bring a touch of humor to your day. With a single click of a
+              button you'll get to read and hear a random joke.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/Javascript.svg" alt="Javascript logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/JokeTeller" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/JokeTeller/" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://zecm1.github.io/InfiniteScroll/" target="_blank">
+              <img
+                class="screenshot"
+                src="Assets/InfiniteScroll.png"
+                height="500"
+                width="750"
+                alt="Infinite Scroll screenshot"
+            /></a>
+            <h2>Infinite Scroll</h2>
+            <p>
+              A dynamic platform that showcases images fetched from the Unsplash API, allowing users to scroll through
+              an endless collection of images.
+            </p>
+            <div class="card-icons">
+              <div class="technology">
+                <img class="icon" src="Assets/Icons/Javascript.svg" alt="Javascript logo" />
+              </div>
+              <div class="github-links">
+                <a href="https://github.com/ZecM1/InfiniteScroll" target="_blank">
+                  <img src="Assets/Icons/Github.svg" alt="Github logo" class="icon" />
+                </a>
+
+                <a href="https://zecm1.github.io/InfiniteScroll/" target="_blank">
+                  <img src="Assets/Icons/OpenLink.svg" alt="Open Webpage" class="icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="project-buttons fade-in">
+          <button class="carousel-button prev">
+            <img src="/Assets/Icons/Left.svg" alt="Previous Button" />
+          </button>
+          <button class="carousel-button next">
+            <img src="/Assets/Icons/Right.svg" alt="Next Button" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Experience section -->
+      <section class="experience-container mainsection" id="experience">
+        <article class="experience-content fade-in">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              <div class="job-container">
+                <b>Game Quality Assurance Tester</b>
+                <i>2022.- Present</i>
+              </div>
+              <i>DAQA, GBTN, Lionbridge Games Crowd</i>
+            </li>
+            <li>
+              <div class="job-container">
+                <b>Graphic and Multimedia Design </b>
+                <i>2018.- Present</i>
+              </div>
+              <i>Hobby & Freelance</i>
+            </li>
+          </ul>
+        </article>
+        <div class="about-design-element fade-in"></div>
+        <article class="skill-content fade-in">
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML, CSS, SCSS, Javascript, React, C++</li>
+              <li>Adobe Photoshop, Davinci Resolve, Premiere Pro, After Effects, Illustrator, Figma</li>
+              <li>Blender</li>
+            </ul>
+          </div>
+          <div class="qualities">
+            <h2>Qualities</h2>
+            <ul>
+              <li>Patient and organized</li>
+              <li>Eager to lear nand contribute</li>
+              <li>Quick learner, especially in regards to software and technology</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

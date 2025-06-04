@@ -1,0 +1,187 @@
+.about-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 3rem 3rem 3rem;
+  gap: 2rem;
+  scroll-snap-align: start;
+}
+.about-content {
+  opacity: 0;
+  animation: fade-in 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.about-title {
+  font-size: 3rem;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 2px var(--primary-color);
+}
+.about-text {
+  font-size: 1.4rem;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.contact-links .icon.square:hover {
+  border-radius: 5px;
+}
+
+.about-design-element {
+  min-height: 25%;
+  width: 1px;
+  background: var(--accent-color);
+  display: block;
+  opacity: 0;
+}
+.about-container .about-design-element {
+  animation: fade-in 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
+}
+
+.radio-container {
+  height: fit-content;
+  display: grid;
+  justify-content: start;
+  gap: 1rem;
+  width: 70%;
+  min-width: 50%;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  outline: var(--accent-color) solid 1px;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 0.5rem;
+  overflow: scroll;
+  box-shadow: 0 0 10px var(--accent-color), 5px 5px 15px rgba(128, 128, 128, 0.1) inset,
+    -5px -5px 15px rgba(255, 255, 255, 0.1) inset;
+  opacity: 0;
+  animation: fade-in 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+label,
+input {
+  width: fit-content;
+  grid-row: 1;
+  grid-column: 1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.radio-future {
+  border-radius: 1rem 0 0 0;
+  border-right: 1px solid var(--primary-color);
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+.radio-past {
+  margin-left: 5rem;
+  border-radius: 0 0 1rem 0;
+  padding-right: 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.text-future,
+.text-past {
+  grid-row: 2;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+.text-future li {
+  margin: 0.5rem;
+}
+small {
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+input.radio-past:checked + .radio-past {
+  background-color: var(--hover-color-dark);
+  box-shadow: 0 4px 0 var(--hover-color-light);
+  color: var(--text-color-light);
+}
+input.radio-future:checked + .radio-future {
+  background-color: white;
+  background-color: var(--hover-color-dark);
+  box-shadow: 0 4px 0 var(--hover-color-light);
+  color: var(--text-color-light);
+  width: 5rem;
+}
+
+input.radio-past:checked ~ .text-future {
+  display: none;
+}
+input.radio-future:checked ~ .text-past {
+  display: none;
+}
+
+.radio-past:hover,
+.radio-future:hover {
+  background-color: var(--hover-color-dark);
+  box-shadow: 0 4px 0 var(--hover-color-light);
+  color: var(--text-color-light);
+}
+
+.text-future,
+.text-past {
+  opacity: 1;
+  transform-origin: top;
+  transition: opacity 1.5s ease;
+  font-size: 1.1rem;
+}
+
+.text-past input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+}
+
+.text-past label {
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.text-past label:before {
+  content: '► ';
+}
+input[type='checkbox']:checked + label:before {
+  content: '▼ ';
+}
+
+.past-content {
+  height: 0;
+  overflow: hidden;
+  border-radius: 0 0 4px 4px;
+}
+input[type='checkbox']:checked + label + .past-content {
+  height: auto;
+  transform: translateX(2rem);
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2), -1px -1px 5px rgba(128, 128, 128, 0.2) inset;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  width: 90%;
+  overflow: hidden;
+}
+
+.radio-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar (Chrome, Safari) */
+}
+
+@starting-style {
+  .about-container {
+    opacity: 0;
+  }
+  .text-future,
+  .text-past {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,177 @@
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-container .about-design-element {
+    display: none;
+  }
+  .radio-container {
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    flex-wrap: no-wrap;
+    overflow: hidden;
+  }
+  .projects-container h2 {
+    display: inline;
+  }
+  .project-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 50%;
+  }
+  .carousel-button {
+    position: static;
+    transform: scale(0.5);
+  }
+  .wrapper {
+    width: 80%;
+    height: 85%;
+  }
+  .card {
+    min-width: 80vw;
+  }
+  .card .screenshot {
+    width: 100%;
+    margin: 1em 0 0 0;
+    aspect-ratio: 1/1;
+  }
+  .card p {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .experience-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .experience-container .about-design-element {
+    display: none;
+  }
+  .job-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .experience-content {
+    width: 100%;
+    height: fit-content;
+    padding: 3rem 3rem 0 3rem;
+    margin: 0 auto;
+  }
+  .skill-content {
+    padding-top: 0;
+    width: 100%;
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-container .about-design-element {
+    display: none;
+  }
+  .radio-container {
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    flex-wrap: no-wrap;
+    overflow: hidden;
+  }
+  .projects-container h2 {
+    display: inline;
+  }
+  .project-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 50%;
+  }
+  .carousel-button {
+    position: static;
+    transform: scale(0.5);
+  }
+  .wrapper {
+    width: 80%;
+    height: 85%;
+  }
+  .card {
+    min-width: 78vw;
+  }
+  .card .screenshot {
+    width: 100%;
+    margin: 1em 0 0 0;
+    aspect-ratio: 1/1;
+  }
+  .card p {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .experience-container .about-design-element {
+    display: none;
+  }
+  .job-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 9rem;
+  }
+  .experience-content {
+    width: 100%;
+    height: fit-content;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .skill-content {
+    display: flex;
+    gap: 3rem;
+    padding-top: 0;
+    width: 100%;
+    height: fit-content;
+  }
+}

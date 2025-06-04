@@ -1,0 +1,148 @@
+.projects-container {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-container h2 {
+  display: none;
+  padding: 0.2rem 1rem 1rem 0;
+  color: var(--accent-color);
+  text-shadow: 2px 2px 2px var(--primary-color);
+  font-size: 2rem;
+}
+
+.wrapper {
+  position: relative;
+  contain: paint;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: scroll;
+  width: 60vw;
+  height: 80%;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  opacity: 0;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.project-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.carousel-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  z-index: 1000;
+  top: 150%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.prev {
+  left: 5rem;
+}
+.next {
+  right: 5rem;
+}
+.prev,
+.next {
+  filter: drop-shadow(3px 0px 3px var(--primary-color)) drop-shadow(-3px 0px 3px var(--primary-color));
+}
+.prev:hover,
+.next:hover {
+  filter: drop-shadow(3px 0px 3px var(--hover-color-light)) drop-shadow(-3px 0px 3px var(--hover-color-light));
+  transition: filter 0.3s ease;
+}
+
+.carousel-button img {
+  height: 140px;
+  width: 140px;
+}
+.carousel-button img:active {
+  transform: scale(0.8);
+  transition: transform 0.1s ease-in-out;
+}
+
+.card {
+  scroll-snap-align: center;
+  padding: 2rem 2rem 2rem 2rem;
+  border: 2px solid var(--accent-color);
+  min-width: 60vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.1) inset, -5px -5px 15px rgba(255, 255, 255, 0.1) inset;
+}
+.card .screenshot {
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+.screenshot:hover {
+  box-shadow: 0 0 10px var(--hover-color-light), 0 0 20px var(--hover-color-light);
+  transition: box-shadow 0.3s ease;
+}
+
+.card p {
+  width: 70%;
+  text-align: center;
+  color: var(--text-color-light);
+}
+.card h2 {
+  font-size: 2rem;
+  color: var(--text-color-light);
+  text-align: center;
+  text-shadow: 1px 1px 1px var(--accent-color);
+}
+
+.card-icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.github-links,
+.technology {
+  display: flex;
+  gap: 1rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--accent-color);
+}
+.github-links .icon:hover,
+.contact-links .icon:hover {
+  background-color: var(--hover-color-light);
+  box-shadow: var(--hover-color-light) 0px 0px 5px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.github-links a:nth-of-type(2) .icon:hover {
+  border-radius: 5px;
+}
+
+.github-links .icon:active,
+.contact-links .icon:active {
+  transform: scale(0.8);
+  transition: transform 0.1s ease-in-out;
+}
